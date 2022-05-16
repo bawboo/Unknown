@@ -1,0 +1,15 @@
+python run_summarization.py \
+  --do_predict \
+  --model_name_or_path ./output/pytorch_model.bin \
+  --config_name ./output/config.json \
+  --tokenizer_name ./output/ \
+  --test_file $1 \
+  --output_file $2 \
+  --output_dir ./output/ \
+  --predict_with_generate \
+  --text_column maintext \
+  --summary_column title \
+  --overwrite_output_dir \
+  --ignore_pad_token_for_loss \
+  --max_target_length 40 \
+  --num_beams 6

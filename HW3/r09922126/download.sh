@@ -1,0 +1,1 @@
+wget https://www.dropbox.com/s/43se3hyw5q70w74/pytorch_model.bin?dl=1 -O output/pytorch_model.bin
